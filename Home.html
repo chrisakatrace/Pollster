@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<hmtl>
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+    <script src="JS/scripts.js"></script>
+    <script src="JS/bootstrap_min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <img class="img-fluid" src="Images/Pollster_Logo.png"></img>
+        <nav class="navbar bg-primary navbar-inverse navbar-toggleable-sm sticky-top">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#categoryNavigation" aria-controls="categoryNavigation" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-7" id="categoryNavigation">
+                <ul class="navbar-nav mr-auto">   
+                    <li class="nav-item"><a class="nav-link" href="#">Personalized</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Trending</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#politics_question1">Politics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sports_question1">Sports</a></li>
+    <!--                <li class="nav-item"><a class="nav-link" href="#">Entertainment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Lifestyle</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Health &amp; Fitness</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Food &amp; Drink</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Travel</a></li>-->
+                </ul>
+            </div>
+            <form class="form-inline">
+                <input type="search" class="form-control mr-2" placeholder="Enter Keywords" />
+                <button class="btn btn-info">Search</button>
+            </form>            
+        </nav>
+    </header>
+    <section id="politics_polls" class="row">
+        <form class="col-md">
+            Choose all of Trump's deficiencies?<br>
+            <input type="checkbox" name="politics_question_1" value="option1">Mental Stability<br>
+            <input type="checkbox" name="politics_question_1" value="option2">IQ<br>  
+            <input type="checkbox" name="politics_question_1" value="option3">Maturity<br>    
+            <input type="checkbox" name="politics_question_1" value="option3">Morality<br>
+            <input type="checkbox" name="politics_question_1" value="option4">None, Trump ain't got not deficiencies.<br>     
+            <input type="submit" name="btnAnswer" value="Answer" />
+        </form>
+        <form class="col-md">
+            Would you prefer Trump or Pence as President?<br>
+            <input type="radio" name="politics_question_2" value="option1">Trump<br>
+            <input type="radio" name="politics_question_2" value="option2">Pence<br>  
+            <input type="radio" name="politics_question_2" value="option3">Neither<br> 
+            <input type="submit" name="btnAnswer" value="Answer" />      
+        </form>
+    </section>
+    <section id="sports_polls" class="row">
+        <form class="col-md">
+            Who will win the Super Bowl in 2017?<br>
+            <input type="radio" name="sports_question_1" value="option1">Patriots<br>
+            <input type="radio" name="sports_question_1" value="option2">Bengals<br>  
+            <input type="radio" name="sports_question_1" value="option3">Browns<br>    
+            <input type="submit" name="btnAnswer" value="Answer" />   
+        </form>
+        <form class="col-md">
+            Rate Tom Brady's skill level among current quarterbacks?<br>
+            <input type="range" name="sports_question_2" value="option1" min="1" max="10" step="1" />
+            <input type="submit" name="btnAnswer" value="Answer" />
+        </form>
+    </section>
+    <aside>
+    </aside>
+    <footer>
+    </footer>
+</div> <!--container-->
+</body>
+</html>
